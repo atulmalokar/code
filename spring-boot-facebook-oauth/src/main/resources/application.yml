@@ -1,0 +1,14 @@
+spring: 
+  application:    name: spring-boot-facebook-oauth
+    
+security:
+  oauth2:
+    client:
+      client-id: 596235238045503
+      client-secret: ae5d54e61a4559c29c6f54a1c8348825
+      access-token-uri: https://graph.facebook.com/oauth/access_token
+      user-authorization-uri: https://www.facebook.com/dialog/oauth
+      token-name: oauth_token
+      authentication-scheme: query
+      client-authentication-scheme: form
+    resource:      user-info-uri: https://graph.facebook.com/me
