@@ -15,6 +15,7 @@ public class SpringbootsecuritywithJwtApplication {
 		SpringApplication.run(SpringbootsecuritywithJwtApplication.class, args);
 	}
 
+	//method to encode password
 	@Bean
 	public PasswordEncoder passwordEncoder() {
 		return NoOpPasswordEncoder.getInstance();

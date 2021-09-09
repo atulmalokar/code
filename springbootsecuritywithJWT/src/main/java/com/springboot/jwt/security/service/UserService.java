@@ -8,12 +8,9 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+//creating user servie layer and implementing userDetailsService Interface
 @Service
 public class UserService implements UserDetailsService{
-	
-
-	
-
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		//Logic to get the user from the database
